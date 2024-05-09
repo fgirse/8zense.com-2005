@@ -55,7 +55,7 @@ const ContactUs: React.FC = () => {
       setErrors(errors);
 
       if (!errors.name && !errors.email && !errors.message) {
-        await fetch('/api/email', {
+        await fetch('/api/send', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
