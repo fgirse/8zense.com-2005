@@ -11,7 +11,7 @@ const ExampleWrapper = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="px-5 py-3
-     mb-12 grid place-content-center">
+     mb-12 grid place-content-center bg-amber-600-50">
       <button
         onClick={() => setIsOpen(true)}
         className="mb-12 text-4xl bg-gradient-to-b from-zenseSignal2 to-yellow-600 text-white font-medium px-4 py-2 rounded hover:opacity-90 shadow-sm hovr:shadow-lg shadow-black transition-opacity"
