@@ -36,4 +36,4 @@
 , "components/Contact.jsx"  ],
   "exclude": ["node_modules"]
   
-  }
+}

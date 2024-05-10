@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     const { data, error } = await resend.emails.send({
       from: 'info@8zense.com',
       to: payload.email,
-      subject: `Vielen Dank für Interesse an 8zense.com, ${payload.name}`,
+      subject: `Vielen Dank für Ihr Interesse an 8zense.com, ${payload.name}`,
       react: ContactUsEmail(payload),
     });
 

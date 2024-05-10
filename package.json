@@ -8,7 +8,8 @@
     "start": "next start",
     "type": "commonjs",
     "lint": "next lint",
-    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+    "email": "email dev --dir src/emails"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -44,6 +45,7 @@
     "@uploadthing/react": "^6.1.0",
     "add": "^2.0.6",
     "antd": "^5.16.2",
+    "axios": "^1.6.8",
     "cjstoesm": "^2.1.2",
     "class-variance-authority": "^0.7.0",
     "cli-real-favicon": "^0.0.8",
