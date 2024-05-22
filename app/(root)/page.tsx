@@ -1,4 +1,3 @@
-20;
 import { getListPage } from "@/lib/contentParser";
 import link from "next/link";
 import { ClientAnimationWrapper } from "@/components/share/ClientAnimationWrapper";
@@ -95,9 +94,9 @@ export default function Home() {
 
             <p className="-mt-12 text-base md:text-lg text-slate-700 my-4 md:my-6">
               <span className="text-zenseSignal2 font-bold">8zenSe.com</span>{" "}
-              begleitet, beratet und unterstützt Sie professionell bei der
+              begleitet, beratet und unterstÃ¼tzt Sie professionell bei der
               Planung und Umsetzung Ihres individuellen Interieure Desings in
-              Wohnung, Haus, Büro ofer Praxis. Sprechen Sie uns an - Wir freuen
+              Wohnung, Haus, BÃ¼ro ofer Praxis. Sprechen Sie uns an - Wir freuen
               uns auf Sie!
             </p>
           </section>
@@ -115,7 +114,7 @@ export default function Home() {
 
             <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
               <span className="text-zenseSignal2 font-bold">8zenSe.com</span>{" "}
-              steht für individuelles, extravagantes und exklusives Desing aus
+              steht fÃ¼r individuelles, extravagantes und exklusives Desing aus
               dem Marterial Beton in unterschiedlichen Designvariationen und
               Designform{" "}
             </p>

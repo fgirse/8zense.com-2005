@@ -35,4 +35,83 @@
           height: auto;
           background-color: red;
         }
-      
+        .hero {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: url("/background.jpg") no-repeat center;
+          background-size: cover;
+        }
+        
+        .form {
+          max-width: 430px;
+          padding: 54px;
+          backdrop-filter: blur(24px);
+          border-radius: 24px;
+          border: 1px solid #ac7f88;
+          box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.05);
+        }
+        
+        .title {
+          font-size: 32px;
+          color: #f9ebde;
+          margin-bottom: 24px;
+          font-weight: 700;
+          text-align: center;
+        }
+        
+        .group {
+          display: flex;
+          flex-wrap: wrap;
+          border: none;
+        }
+        
+        .input,
+        .textarea {
+          border: none;
+          flex-basis: 100%;
+          background-color: transparent;
+          min-height: 42px;
+          margin-bottom: 24px;
+          padding: 8px;
+          color: #f9edbe;
+          font-size: 20px;
+          border-bottom: 1px solid #f9edbe;
+          outline: none;
+          transition: 0.15s;
+        }
+        
+        .input::placeholder,
+        .textarea::placeholder {
+          color: #d1c4b7;
+          font-size: 20px;
+        }
+        
+        .input:hover,
+        .input:focus,
+        .textarea:hover,
+        .textarea:focus {
+          border-color: #ac7f88;
+        }
+        
+        .textarea {
+          min-height: 120px;
+          resize: none;
+        }
+        
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 40px;
+          width: 100%;
+          background-color: #f9ebde;
+          padding: 8px;
+          font-size: 24px;
+          margin-top: 24px;
+          font-weight: 700;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+        

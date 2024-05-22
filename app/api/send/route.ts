@@ -1,29 +1,23 @@
-import { NextRequest } from 'next/server';
-import { Resend } from 'resend';
-import * as React from 'react';
-import { ContactUsEmail } from '@/components/email/contact-us';
+import EmailTemplate  from '../../../components/email/EmailTemplate';
+import {Resend } from 'resend';
 
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-
-export async function GET(req: Request) {
-  
-  const resend = new Resend(process.env.RESEND_API_KEY);
-  const payload = await req.json();
-
+export async function POST() {
   try {
     const { data, error } = await resend.emails.send({
-      from: 'info@8zense.com',
-      to: 'fgirse@bluewin.ch',
-      subject: `Vielen Dank für Ihr Interesse an 8zense.com, ${payload.name}`,
-      html: '<h1>Vielen Dank für Ihr Interesse an 8zense.com</h1>'
+      from: 'Acme <onboarding@resend.dev>',
+      to: ['delivered@resend.dev'],
+      subject: 'Hello world',
+      react: EmailTemplate({ content: `Hello ${'John'}`, }),
     });
 
     if (error) {
-      return Response.json({ error });
+      return Response.json({ error }, { status: 500 });
     }
 
-    return Response.json({ data });
+    return Response.json(data);
   } catch (error) {
-    return Response.json({ error });
+    return Response.json({ error }, { status: 500 });
   }
 }
