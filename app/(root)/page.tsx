@@ -29,7 +29,7 @@ export default function Home() {
     <>
       {/*====================================================grid start ===============*/}
 
-      <section className={'mx-auto min-h-screen") '}>
+      <section className={styles.section}>
         {/*<div className="/Users/fgirse/Downloads/WhatsApp Image 2024-04-24 at 2.50.03 PM (3).jpeg /Users/fgirse/Downloads/WhatsApp Image 2024-04 /Users/fgirse/Downloads/WhatsApp lg:hidden">
   <Image src="/assets/images/interiore11.jpg" alt="background hero mobile" fill sizes="100vw"/>
   </div>*/}
@@ -37,14 +37,14 @@ export default function Home() {
         <div className="lg:block lg:w-full h-screen bg-[url('/assets/images/interiore14.jpg')] bg-cover lg:bg-cover lg:bg-no-repeat">
           <div className="relative top-[12vh]flex flex-col items-center justify-center lg:relative bg-black/20 lg:flex lg:flex-row lg:justify-evenly lg:items-stretch lg:gap-x-3 lg:top-[32vh] xl:top-[43vh] 2xl:[40vh]">
             {/*============================== LINKS =======================*/}
-            <div className="px-2 sm:px-5 flex flex-col justify-center lg:w-2/3 lg:py-20">
+            <div className="px- leading-5 sm:px-5 flex flex-col justify-center lg:w-2/3 lg:py-20">
               <h1 className="mt-5 py-3 text-zenseWhite font-black leading-3 text-4xl uppercase sm:text-7xl sm-leading-3  lg:py-12 lg:mt-3 lg:relative lg:text-zenseWhite lg:text-[4.666rem] lg:leading-3 lg:font-black  lg:uppercase lg:text-left xl:text-[7.166rem]">
                 design interiore
               </h1>
               <h1 className=" -mt-2 font-black lg:text-left leading-3 text-5xl text-lime-200 uppercase sm:text-8xl md:-mt-5 md:text-8xl lg:-mt-3 lg:text-[8.33rem] lg:font-black xl:text-[11.33rem] lg:leading-3 ">
                 8zenSe.com
               </h1>
-              <p className=" text-zenseWhite sm:text-3xl lg:text-4xl lg:font-black lg:text-left">
+              <p className=" text-zenseWhite text-[2rem] leading-7 sm:text-4xl lg:text-4xl lg:font-black lg:text-left">
                 Timeless Design rund um den Werkstoff Beton
               </p>
             </div>
