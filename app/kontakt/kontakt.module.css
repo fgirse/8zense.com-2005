@@ -1,4 +1,4 @@
-main {
+.main {
   min-height: 100dvh;
   display: grid;
   place-content: center;
@@ -7,9 +7,6 @@ main {
   margin-right: 0vw;
 }
 
-section {
-  
-}
 
 .emailIcon {
   color: #ffdd00;
