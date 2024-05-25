@@ -10,10 +10,11 @@ import { PropsWithChildren } from "react";
 
 const Header = () => {
   return (
-    <header className="flex flex-col w-full lg:h-20 text-white items-center justify-between bg-transparent">
+    <header className="flex flex-col lg:h-20 text-white items-center justify-between bg-transparent">
       <div
         id=""
-        className="bg-neutral-600 w-[100vw] h-20 flex flex-row items-center justify-between "
+        className="bg-neutral-600 w-[100-vw] h-20 flex flex-row items-center justify-between 
+        lg:w-[1300px] xl:w-[1500px] 2xl:w-[1800px] "
       >
         <Link href="/" className="ml-5">
           <div className=" md:flex flex-row justify-center items-center gap-x-7">
@@ -34,8 +35,8 @@ const Header = () => {
             <div className="hidden relative w-20 h-16 ">
               <Image src={Logo} sizes="100vw" fill alt="Logo 8zense.com" />
             </div>
-            <UserButton afterSignOutUrl="/" />
-            <div className="text-5xl lg:hidden"></div>
+            <UserButton afterSignOutUrl="/user" />
+            <div className="text-5xl "></div>
           </div>
         </SignedIn>
 

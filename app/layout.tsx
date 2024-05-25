@@ -3,6 +3,7 @@ import 'normalize-css/normalize.css';
 import './globals.css';
 import styles from './home.module.css';
 import { ClerkProvider } from '@clerk/nextjs';
+import ClientProvider from '@/components/ClientProvider';
 import { neobrutalism } from '@clerk/themes';
 import link from 'next/link';
 
@@ -37,7 +38,10 @@ export default function RootLayout({
    <html lang="en" className="bg-transparent">
 
 
-      <body suppressHydrationWarning={true} className={styles.container}>{children}</body>
+      <body suppressHydrationWarning={true} className={styles.container}>
+        <ClientProvider/>
+        {children}</body>
+      
     </html>
     </ClerkProvider>
   )

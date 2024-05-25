@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { FiAlertCircle } from "react-icons/fi";
-import ContactUs from"@/components/share/contact-us";
+import ContactUsForm from"@/components/ContactUsForm";
 import Image from "next/image";
 import Logo from "@/public/assets/images/LogoEZ990.svg"
 
@@ -49,14 +49,14 @@ const SpringModal = ({
           >
       {/*<FiAlertCircle className="text-white/ rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />*/}
             <div className="relative z-10">
-              <div className="bg-white w-36 h-36 rounded-xl text-3xl text-indigo-600 grid place-items-center mx-auto">
+              <div className="bg-slate-600 w-52 h-52 rounded-xl text-3xl text-indigo-600 grid place-items-center mx-auto">
                 <Image src={Logo} sizes="100vw "alt="Logo"/>
               </div>
-              <h3 className="py-3 text-3xl font-bold text-center mb-5">
+              <h3 className="mt-3 py-3 text-4xl text-slate-500 font-bold text-center mb-5">
                 Send email to 8zense.com
               </h3>
               
-              <ContactUs/>
+              <ContactUsForm/>
               <div className="flex gap-2">
                 <button
                   onClick={() => setIsOpen(false)}

@@ -53,7 +53,7 @@ const navItems: NavItem[] = [
   },
   {
     label: "Galerie",
-    link: "./galery"
+    link: "./gallery"
   },
   {
     label: "Kontakt",
@@ -147,7 +147,7 @@ export default function Navbar() {
         </div>
         {/* navitems */}
       </section>
-      <Link href="/user-profile" className="text-sm text-lime-300">
+      <Link href="/auth/user-profile" className="text-sm text-lime-300">
       <button className="ml-3 mr-3 first-letter: w-24 py-1 px-2 border-2 rborder-1 rounded-xl h-fit text-lime-300 transition-all hover:bg-zenseSignal2/90">
           My Profile
         </button>
@@ -223,7 +223,7 @@ function SingleNavItem(d: NavItem) {
       href={d.link ?? "#"}
       className="relative px-2 py-3 transition-all "
     >
-      <p className="flex cursor-pointer items-center gap-2 py-3 px-1 border-b-2 w-full h-12 text-neutral-100 hover:bg-slate-200 hover:text-black text-[2.33rem] ">
+      <p className="flex cursor-pointer items-center gap-4 py-3 px-1 border-b-2 w-full h-12 text-neutral-100 hover:bg-slate-200 hover:text-black text-[2.33rem] ">
         <span>{d.label}</span>
         {d.children && (
           // rotate-180

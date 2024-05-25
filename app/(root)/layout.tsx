@@ -3,6 +3,7 @@ import Header from "@/components/share/Header";
 import ScrollToTop from "@/components/BackToTop/ScrollToTop";
 import Newsletter from "@/components/share/Newsletter";
 import styles from "./styles.module.css";
+import Container from '@/components/share/Container';
 import { HeadManagerContext } from "next/dist/shared/lib/head-manager-context.shared-runtime";
 
 export default function HomeLayout({
@@ -12,11 +13,13 @@ export default function HomeLayout({
 }) {
   return (
     <>
+    <Container>
       <Header />
-      <main className={styles.main}>{children}</main>
+      <main>{children}</main>
       <ScrollToTop />
       <Newsletter />
       <Footer />
+      </Container>
     </>
   );
 }
